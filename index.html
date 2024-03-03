@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="share-model-form">
+        <h1>Share you Model with us</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+          dignissimos.
+        </p>
+        <div class="form-container">
+          <form action="" class="model-form">
+            <div className="person-info">
+              <p>
+                <label htmlFor="name">Your name</label>
+                <input type="text" id="name" name="name" required />
+              </p>
+              <p>
+                <label htmlFor="email">Your email</label>
+                <input type="email" id="email" name="email" required />
+              </p>
+            </div>
+            <p>
+              <label htmlFor="title">Title</label>
+              <input type="text" id="title" name="title" required />
+            </p>
+            <p>
+              <label htmlFor="summary">Short Summary</label>
+              <input type="text" id="summary" name="summary" required />
+            </p>
+            <p>
+              <label htmlFor="instructions">Instructions</label>
+              <textarea
+                id="instructions"
+                name="instructions"
+                rows="10"
+                required
+              ></textarea>
+            </p>
+            <ImagePicker label="Your image" name="image" />
+            {state.message &&
+            <p>{state.message}</p>
+            }
+            <p className="{classes.actions}">
+              <MealsFormSubmit />
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div class="img-picker">
+      <label htmlFor="{name}">{label}</label>
+      <div class="img-input-container">
+        <input
+          type="file"
+          id="{name}"
+          name="{name}"
+          accept="image/png, image/jpeg"
+        />
+      </div>
+    </div>
+  </body>
+</html>
