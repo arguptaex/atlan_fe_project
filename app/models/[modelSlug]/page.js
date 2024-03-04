@@ -4,6 +4,11 @@ import { useState } from "react";
 import "./modelSlug.css";
 import { dummyModels } from "@/models-data";
 import calculateResult from "@/app/api/modelOuput";
+import { BiLike } from "react-icons/bi";
+import { IoEyeOutline } from "react-icons/io5";
+import { CiShare2 } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
+
 
 
 
@@ -70,19 +75,19 @@ export default function ModelPage({ params }) {
             <section className="model-social-stats">
                 <div className="container">
                     <a className="social-stat-icons">
-                        <ion-icon name="heart-outline"></ion-icon>
+                        <BiLike />
                         Likes {foundModel.likes}
                     </a>
                     <a className="social-stat-icons">
-                        <ion-icon name="eye-outline"></ion-icon>
+                        <IoEyeOutline />
                         Views {foundModel.views}
                     </a>
                     <a className="social-stat-icons">
-                        <ion-icon name="share-social-outline"></ion-icon>
+                        <CiShare2 />
                         Shares
                     </a>
                     <a href="" className="github-anchor">
-                        <ion-icon name="share-social-outline"></ion-icon>
+                        <FaGithub />
                         GitHub
                     </a>
                 </div>

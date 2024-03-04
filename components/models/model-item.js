@@ -2,6 +2,7 @@ import Image from "next/image";
 import modelImg from "@/assets/model_one.jpg";
 import Link from 'next/link';
 import { BiLike } from "react-icons/bi";
+import { IoEyeOutline } from "react-icons/io5";
 
 
 import imagesrc from "../../assets/model_one.jpg"
@@ -32,7 +33,7 @@ export default function Model({ title, slug, image, creator, likes, views }) {
                         <BiLike />Likes {likes}
                     </span>
                     <span className="stats-icons">
-                        <ion-icon name="eye-outline"></ion-icon>Views {views}
+                        <IoEyeOutline />Views {views}
                     </span>
                 </div>
                 <Link href={`/models/${slug}`} className="model-try-btn">
