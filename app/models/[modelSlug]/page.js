@@ -89,7 +89,7 @@ export default function ModelPage({ params }) {
             </section>
             <section className="model-demo">
                 <div className="container">
-                    <h1>Let's Try out this Model</h1>
+                    <h1>Lets Try out this Model</h1>
 
                     <form onSubmit={handleSubmit} action="" className="demo-form">
 

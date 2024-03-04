@@ -7,9 +7,9 @@ export default function HeroSection(params) {
         <section className="hero-section">
             <div className="container">
                 <div className="hero-text-section">
-                    <h1>Join the AI Revolution: Share Your Models with the World!"?</h1>
+                    <h1>Join the AI Revolution: Share Your Models with the World!?</h1>
                     <p>
-                        Whether you're a coding novice or a seasoned pro, our platform is
+                        Whether youre a coding novice or a seasoned pro, our platform is
                         designed to fuel your passion and drive your projects to new
                         heights.
                     </p>

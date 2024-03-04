@@ -11,7 +11,7 @@ export default function Home() {
     <main className={styles.main}>
       <HeroSection />
       <ModelsShowcase models={dummyModels} />
-      <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+
 
     </main>
   );
