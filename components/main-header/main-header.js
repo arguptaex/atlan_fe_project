@@ -11,13 +11,13 @@ export default function MainHeader(params) {
                 </div>
 
                 <nav className="main-nav-list">
-                    <li><a className="main-nav-link" href="/index">About</a></li>
-                    <li><a className="main-nav-link" href="">NPTEL</a></li>
-                    <li><a className="main-nav-link" href="">Code Snippets</a></li>
+                    <li><a className="main-nav-link" href="/">Home</a></li>
+                    <li><a className="main-nav-link" href="/models">Trending</a></li>
+                    <li><a className="main-nav-link" href="">About</a></li>
                     <li><a className="main-nav-link" href="">Contact Us</a></li>
                     <a className="nav-signup-btn" href="">Sign Up / Log In</a>
                 </nav>
-                <a className="signup-btn" href=""><button>Sign Up / Log In</button></a>
+                <a className="signup-btn" href="/share"><button>Upload Model++</button></a>
 
                 <button className="menu-btn" >
                     <ion-icon className="icon-mobile-nav" name="menu-outline"></ion-icon>

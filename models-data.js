@@ -1,72 +1,68 @@
 export const dummyModels = [
-    {
-        title: 'Juicy Cheese Burger',
-        slug: 'juicy-cheese-burger',
-        image: 'burger.jpg',
-        summary:
-            'A mouth-watering burger with a juicy beef patty and melted cheese, served in a soft bun.',
-        instructions: `
-        1. Prepare the patty:
-           Mix 200g of ground beef with salt and pepper. Form into a patty.
-  
-        2. Cook the patty:
-           Heat a pan with a bit of oil. Cook the patty for 2-3 minutes each side, until browned.
-  
-        3. Assemble the burger:
-           Toast the burger bun halves. Place lettuce and tomato on the bottom half. Add the cooked patty and top with a slice of cheese.
-  
-        4. Serve:
-           Complete the assembly with the top bun and serve hot.
-      `,
-        creator: 'John Doe',
-        creator_email: 'johndoe@example.com',
-    },
-    {
-        title: 'Spicy Curry',
-        slug: 'spicy-curry',
-        image: 'curry.jpg',
-        summary:
-            'A rich and spicy curry, infused with exotic spices and creamy coconut milk.',
-        instructions: `
-        1. Chop vegetables:
-           Cut your choice of vegetables into bite-sized pieces.
-  
-        2. Sauté vegetables:
-           In a pan with oil, sauté the vegetables until they start to soften.
-  
-        3. Add curry paste:
-           Stir in 2 tablespoons of curry paste and cook for another minute.
-  
-        4. Simmer with coconut milk:
-           Pour in 500ml of coconut milk and bring to a simmer. Let it cook for about 15 minutes.
-  
-        5. Serve:
-           Enjoy this creamy curry with rice or bread.
-      `,
-        creator: 'Max Schwarz',
-        creator_email: 'max@example.com',
-    },
-    {
-        title: 'Homemade Dumplings',
-        slug: 'homemade-dumplings',
-        image: 'dumplings.jpg',
-        summary:
-            'Tender dumplings filled with savory meat and vegetables, steamed to perfection.',
-        instructions: `
-        1. Prepare the filling:
-           Mix minced meat, shredded vegetables, and spices.
-  
-        2. Fill the dumplings:
-           Place a spoonful of filling in the center of each dumpling wrapper. Wet the edges and fold to seal.
-  
-        3. Steam the dumplings:
-           Arrange dumplings in a steamer. Steam for about 10 minutes.
-  
-        4. Serve:
-           Enjoy these dumplings hot, with a dipping sauce of your choice.
-      `,
-        creator: 'Emily Chen',
-        creator_email: 'emilychen@example.com',
-    }
+   {
+      "title": "Sentiment Analysis AI Model",
+      "slug": "sentiment-analysis-ai-model",
+      "brief": "This AI model analyzes the sentiment of text data.",
+      "instructions": "Enter your text in the input box and click 'Analyze' to see the sentiment analysis results.",
+      "image": "model_one.jpg",
+      "creator": "John Doe",
+      "creator_email": "johndoe@example.com",
+      "likes": 10,
+      "views": 20,
+      "input_type": "Text",
+
+   },
+   {
+      "title": "Image Recognition AI Model",
+      "slug": "image-recognition-ai-model",
+      "brief": "An AI model that identifies objects in images.",
+      "instructions": "Upload an image and click 'Detect Objects' to see the identified objects in the image.",
+      "image": "model_one.jpg",
+      "creator": "Jane Smith",
+      "creator_email": "janesmith@example.com",
+      "likes": 5,
+      "views": 15,
+      "input_type": "image",
+
+   },
+   {
+      "title": "Speech-to-Text AI Model",
+      "slug": "speech-to-text-ai-model",
+      "brief": "A model that converts spoken words into text.",
+      "instructions": "Click the microphone button and start speaking to see your speech converted into text.",
+      "image": "model_one.jpg",
+      "creator": "Alice Johnson",
+      "creator_email": "alicejohnson@example.com",
+      "likes": 8,
+      "views": 25,
+      "input_type": "voice",
+
+   },
+   {
+      "title": "Movie Recommendation AI Model",
+      "slug": "movie-recommendation-ai-model",
+      "brief": "A recommendation system that suggests movies based on user preferences.",
+      "instructions": "Rate some movies to get personalized recommendations tailored to your taste.",
+      "image": "model_one.jpg",
+      "creator": "Bob Brown",
+      "creator_email": "bobbrown@example.com",
+      "likes": 12,
+      "views": 30,
+      "input_type": "image",
+
+   },
+   {
+      "title": "Customer Support Chatbot AI Model",
+      "slug": "customer-support-chatbot-ai-model",
+      "brief": "A chatbot that provides customer support.",
+      "instructions": "Type your message in the chatbox to get assistance from the chatbot.",
+      "image": "model_one.jpg",
+      "creator": "Eve Wilson",
+      "creator_email": "evewilson@example.com",
+      "likes": 7,
+      "views": 18,
+      "input_type": "Text",
+
+   },
 
 ];

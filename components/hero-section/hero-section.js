@@ -15,7 +15,7 @@ export default function HeroSection(params) {
                     </p>
                     <Link href="/share">
                         <button className="explore-btn">
-                            EXPLORE
+                            UPLOAD MODEL
                         </button>
                     </Link>
                 </div>

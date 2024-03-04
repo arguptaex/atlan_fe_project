@@ -26,7 +26,7 @@ body {
 }
 
 :root {
-  --secondary-color: #aff557;
+  --secondary-color: #279af1;
   --secondary-color-two: #f0c3bd;
   --primary-text-color: #080808;
 }
@@ -36,6 +36,10 @@ body {
   display: flex;
   margin: 4rem auto;
 }
+Image {
+  position: relative;
+}
+
 /* ==========================================REUSABLE COMPONENTS END============================================================ */
 
 /* ==========================================HEADER STARTS ============================================================ */
@@ -48,7 +52,7 @@ body {
   align-items: center;
   margin: auto;
   padding: 2rem 0;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 .logo {
   /* border: 1px solid red; */
@@ -100,7 +104,7 @@ body {
   background-color: #080808;
   border-radius: 0.5rem;
 
-  color: #aff557;
+  color: var(--secondary-color);
 }
 .main-nav-list .nav-signup-btn {
   display: none;
@@ -154,8 +158,12 @@ body {
   /* border: 2px solid red; */
   padding: 4rem;
   height: 60vh;
-  border-radius: 2rem;
-  background-image: url("/hero-image1.jpg");
+  border-radius: 1rem;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.599),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url("/hero-image1.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -166,17 +174,20 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4.2rem;
+  text-align: center;
 }
 
 .hero-text-section h1 {
   font-size: 5rem;
   color: var(--primary-text-color);
+  color: #fff;
 }
 
 .hero-text-section p {
   font-size: 2rem;
   color: var(--primary-text-color);
   line-height: 2.8rem;
+  color: #fff;
 }
 
 .hero-img-section {
@@ -192,9 +203,17 @@ body {
   filter: grayscale(4);
   /* width: 100%; */
 }
+
+.hero-text-section a:link,
+.hero-text-section a:visited {
+  /* border: 1px solid red; */
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
 .explore-btn {
-  max-width: 40%;
-  padding: 1.2rem 0;
+  /* max-width: 100%; */
+  padding: 1.2rem 4rem;
   font-size: 2.8rem;
   border: none;
   border-radius: 2rem;
@@ -217,10 +236,12 @@ body {
 /* <!-- ===========================================MODELS SHOWCASE======================================================== --> */
 
 .models-showcase .container {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   flex-direction: column;
   gap: 4rem;
-  padding: 4rem 0;
+  padding: 4rem 4rem;
+  background-color: #dce1e9;
+  border-radius: 0.6rem;
 }
 .showcase-headline {
   text-align: center;
@@ -232,47 +253,98 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  row-gap: 4rem;
 }
 
 .model-card {
-  border: 2px solid aqua;
+  /* border: 2px solid aqua; */
   display: flex;
   flex-direction: column;
-  /* justify-content: space-evenly; */
+
   gap: 2rem;
-  border-radius: 1rem;
+  border-radius: 0.6rem;
+  background-color: #fff;
 }
 
 .model-card-img {
   width: 100%;
   max-height: 50%;
-  border-radius: 1rem 1rem 0 0;
+  border-radius: 0.6rem 0.6rem 0 0;
+}
+
+.model-card-data {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  /* align-items: end; */
+  /* justify-content: flex-end; */
+  align-content: flex-end;
+  /* border: 2px solid aqua; */
+  gap: 2rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  flex-grow: 1;
 }
 .card-head-text {
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
 .model-card p {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+  /* border: 2px solid aqua; */
+  margin-top: auto;
+  flex-grow: 1;
+  display: flex;
+  /* align-items: flex-end; */
+  align-items: flex-end;
+  justify-content: center;
 }
 .model-stats {
   display: flex;
   justify-content: center;
+  /* border: 2px solid aqua; */
+  background-color: var(--secondary-color);
+  border-radius: 0.8rem;
+  padding: 1.4rem;
+  margin-top: auto;
 }
 
 .model-stats .stats-icons {
   display: flex;
+  font-weight: 500;
+  /* border-radius: ; */
 
   justify-content: center;
   align-items: center;
   gap: 1rem;
   flex-grow: 1;
 
-  font-size: 2rem;
+  font-size: 1.6rem;
+}
+.stats-icons.first {
+  border-right: 1px solid #080808;
 }
 
 .model-try-btn {
-  border: 1px solid green;
+  /* border: 2px solid aqua; */
+  margin-top: auto;
+}
+.model-try-btn button {
+  /* border: 1px solid green; */
+  border: none;
+  cursor: pointer;
+  padding: 0.4rem 4rem;
+  border-radius: 0.6rem;
+  background-color: #080808;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.model-try-btn button:hover {
+  background-color: var(--secondary-color);
+  box-shadow: inset 0 0 0 2px var(--primary-text-color);
+  color: var(--primary-text-color);
 }
 
 /* ======================================================FOOTER=================================================================== */
@@ -285,7 +357,7 @@ body {
 .footer .container {
   /* border: 2px solid red; */
 
-  padding: 4rem 6rem;
+  padding: 0 2rem;
   /* flex-basis: 25% 25% 25% 25%; */
 }
 

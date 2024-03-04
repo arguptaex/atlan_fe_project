@@ -9,8 +9,8 @@ export default function MainFooter(params) {
                 <div className="footer-links foot-comp">
                     <a href="" className="foot-link">About</a>
                     <a href="" className="foot-link">Contact Us</a>
-                    <a href="" className="foot-link">Nptel</a>
-                    <a href="" className="foot-link">Code Snippets</a>
+                    <a href="" className="foot-link">Trending</a>
+                    <a href="" className="foot-link">Home</a>
                 </div>
                 <div className="foot-social-handles foot-comp">
                     <a href="" className="foot-social-links">

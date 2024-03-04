@@ -1,9 +1,9 @@
 export default function ImagePicker({ label, name }) {
 
     return (
-        <div class="img-picker">
+        <div className="img-picker">
             <label htmlFor={name}>{label}</label>
-            <div class="img-input-container">
+            <div className="img-input-container">
                 <input
                     type="file"
                     id={name}
